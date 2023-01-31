@@ -8,10 +8,14 @@
 - O jogador terá 5 tentativas.
 
 #### Etapas:
-- [ ] Construir HTML básico
-- [ ] Boas vindas ao jogador e instruções
+- [x] Construir HTML básico
+- [x] Boas vindas ao jogador e instruções
 - [ ] Lógica do número pensado
 - [ ] Lógica do resultado (certo ou errado)
 - [ ] Lógica reiniciar
 - [ ] Lógica do maior ou menor
 - [ ] Lógica das tentativas
+
+##### Extras:
+- [ ] Boas vindas com o nome do jogador.
+- [ ] HTML e CSS mais usuais.
