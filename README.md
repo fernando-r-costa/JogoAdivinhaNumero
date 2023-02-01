@@ -10,7 +10,7 @@
 #### Etapas:
 - [x] Construir HTML básico
 - [x] Boas vindas ao jogador e instruções
-- [ ] Lógica do número pensado
+- [x] Lógica do número sorteado
 - [ ] Lógica do resultado (certo ou errado)
 - [ ] Lógica reiniciar
 - [ ] Lógica do maior ou menor
