@@ -6,8 +6,19 @@ function sorteia(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-console.log(numeroSorteado);
+  const tentativa = document.getElementById("submit-tentativa");
+  
+  function compara() {
+    const chute = parseFloat(document.getElementById("input-chute").value)
+    if (chute == numeroSorteado) {
+        console.log("Parabéns vc acertou!!!");
+    } else {
+        console.log("Você errou!");
+    }    
+}
 
+console.log(numeroSorteado);
+tentativa.onclick = compara;
 
 // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
 // const source = document.getElementById("source");

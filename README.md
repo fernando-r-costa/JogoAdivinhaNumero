@@ -11,7 +11,7 @@
 - [x] Construir HTML básico
 - [x] Boas vindas ao jogador e instruções
 - [x] Lógica do número sorteado
-- [ ] Lógica do resultado (certo ou errado)
+- [x] Lógica do resultado (certo ou errado)
 - [ ] Lógica reiniciar
 - [ ] Lógica do maior ou menor
 - [ ] Lógica das tentativas

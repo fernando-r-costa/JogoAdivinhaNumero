@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-
+    
     <title>Jogo Adivinha o Número</title>
 </head>
 <body>
@@ -17,13 +16,15 @@
     <li>Após escolher o número o jogador será informado se acertou ou errou.</li>
     <li>Se acertou será parabenizado e poderá reiniciar o jogo.</li>
     <li>Se errou será informado se o número é maior ou menor que o número pensado.</li>
-    <li>O jogador terá 5 tentativas.</li>
-    <br>
-    <input>
-    <button>Tentativa</button>
+    <li>O jogador terá 5 tentativas.</li><br>
+
+    <label>Indique seu chute:</label>
+    <input type="text" id="input-chute" required placeholder="CHUTE">
+    <input type="submit" id="submit-tentativa" value="TENTATIVA">
     <input>
     <button>Reiniciar</button>
     
+    <script src="main.js"></script>
     
 </body>
 </html>
