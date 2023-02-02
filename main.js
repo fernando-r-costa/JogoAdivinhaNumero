@@ -4,21 +4,27 @@ function sorteia(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+}
 
-  const tentativa = document.getElementById("submit-tentativa");
-  
-  function compara() {
+const tentativa = document.getElementById("submit-tentativa");
+const reiniciar = document.getElementById("submit-reiniciar");
+
+function compara() {
     const chute = parseFloat(document.getElementById("input-chute").value)
     if (chute == numeroSorteado) {
         console.log("Parabéns vc acertou!!!");
     } else {
         console.log("Você errou!");
-    }    
+    }
+}
+
+function reinicio() {
+    window.location.reload();
 }
 
 console.log(numeroSorteado);
 tentativa.onclick = compara;
+reiniciar.onclick = reinicio;
 
 // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
 // const source = document.getElementById("source");

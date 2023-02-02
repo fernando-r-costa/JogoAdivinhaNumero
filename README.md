@@ -12,7 +12,7 @@
 - [x] Boas vindas ao jogador e instruções
 - [x] Lógica do número sorteado
 - [x] Lógica do resultado (certo ou errado)
-- [ ] Lógica reiniciar
+- [x] Lógica reiniciar
 - [ ] Lógica do maior ou menor
 - [ ] Lógica das tentativas
 - [ ] HTML mostrando certo ou errado, maior ou menor, número de tentativas, fim do jogo e reinício
