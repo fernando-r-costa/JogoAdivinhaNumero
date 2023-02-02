@@ -13,8 +13,10 @@ function compara() {
     const chute = parseFloat(document.getElementById("input-chute").value)
     if (chute == numeroSorteado) {
         console.log("Parabéns vc acertou!!!");
-    } else {
-        console.log("Você errou!");
+    } else if (chute < numeroSorteado) {
+        console.log("Você errou! O número é maior!");
+    } else if (chute > numeroSorteado) {
+        console.log("Você errou! O número é menor!");
     }
 }
 
