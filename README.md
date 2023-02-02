@@ -15,6 +15,7 @@
 - [ ] Lógica reiniciar
 - [ ] Lógica do maior ou menor
 - [ ] Lógica das tentativas
+- [ ] HTML mostrando certo ou errado, maior ou menor, número de tentativas, fim do jogo e reinício
 
 ##### Extras:
 - [ ] Boas vindas com o nome do jogador.
