@@ -1,3 +1,6 @@
+let nomeJogador = prompt("INFORME O SEU NOME?");
+const bemVindo = document.getElementById("bemvindo").innerText = `Seja bem vindo, ${nomeJogador}!`;
+
 const numeroSorteado = sorteia(0, 100)
 
 function sorteia(min, max) {
@@ -15,33 +18,33 @@ let painel = document.getElementById("p-painel");
 function compara() {
     if (numeroTentativas == 5) {
         textoTentativas.innerText = `FIM`
-        painel.innerText = `As suas tentativas acabaram!`
+        painel.innerText = `${nomeJogador} as suas tentativas acabaram!`
     } else if (numeroTentativas < 4) {
         const chute = parseInt(document.getElementById("input-chute").value)
         if (chute == numeroSorteado) {
             numeroTentativas = 5;
             textoTentativas.innerText = `FIM`
-            painel.innerText = `Parabéns você acertou!!!`
+            painel.innerText = `Parabéns você acertou, ${nomeJogador}!!!`
         } else if (chute < numeroSorteado) {
             numeroTentativas++;
-            textoTentativas.innerText = `Tentativas feitas: ${numeroTentativas}`
-            painel.innerText = `Você errou! O número é maior!`
+            textoTentativas.innerText = `Tentativas feitas: ${numeroTentativas}.`
+            painel.innerText = `Você errou! ${nomeJogador} o número é maior!`
         } else if (chute > numeroSorteado) {
             numeroTentativas++;
-            textoTentativas.innerText = `Tentativas feitas: ${numeroTentativas}`
-            painel.innerText = `Você errou! O número é menor!`
+            textoTentativas.innerText = `Tentativas feitas: ${numeroTentativas}.`
+            painel.innerText = `Você errou! ${nomeJogador} o número é menor!`
         }
     } else if (numeroTentativas = 4) {
         const chute = parseInt(document.getElementById("input-chute").value)
         if (chute == numeroSorteado) {
             numeroTentativas = 5;
             textoTentativas.innerText = `FIM`
-            painel.innerText = `Parabéns você acertou!!!`
+            painel.innerText = `Parabéns você acertou, ${nomeJogador}!!!`
         } else if (chute != numeroSorteado) {
             numeroTentativas++;
             textoTentativas.innerText = `FIM`
-            painel.innerText = `Acabou! Você não conseguiu acertar!
-                                O número sorteado foi ${numeroSorteado}`
+            painel.innerText = `${nomeJogador} acabou! Você não conseguiu acertar!
+                                O número sorteado foi ${numeroSorteado}.`
         }
     }
 }

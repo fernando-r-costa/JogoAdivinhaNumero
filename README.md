@@ -19,5 +19,5 @@
 - [ ] Refatorar
 
 ##### Extras:
-- [ ] Boas vindas com o nome do jogador.
+- [x] Boas vindas com o nome do jogador.
 - [ ] HTML e CSS mais usuais e bonitos.
