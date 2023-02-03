@@ -15,8 +15,9 @@
 - [x] Lógica reiniciar
 - [x] Lógica do maior ou menor
 - [x] Lógica das tentativas
-- [ ] HTML mostrando certo ou errado, maior ou menor, número de tentativas, fim do jogo e reinício
+- [X] HTML mostrando certo ou errado, maior ou menor, número de tentativas, fim do jogo e reinício
+- [ ] Refatorar
 
 ##### Extras:
 - [ ] Boas vindas com o nome do jogador.
-- [ ] HTML e CSS mais usuais.
+- [ ] HTML e CSS mais usuais e bonitos.
