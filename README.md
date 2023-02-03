@@ -14,7 +14,7 @@
 - [x] Lógica do resultado (certo ou errado)
 - [x] Lógica reiniciar
 - [x] Lógica do maior ou menor
-- [ ] Lógica das tentativas
+- [x] Lógica das tentativas
 - [ ] HTML mostrando certo ou errado, maior ou menor, número de tentativas, fim do jogo e reinício
 
 ##### Extras:
