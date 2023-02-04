@@ -17,38 +17,45 @@ let painel = document.getElementById("p-painel");
 
 function compara() {
     if (numeroTentativas == 5) {
-        textoTentativas.innerText = `FIM`
-        painel.innerText = `${nomeJogador} as suas tentativas acabaram!`
+        infoTentativas(`FIM`);
+        infoPainel(`${nomeJogador} as suas tentativas acabaram!`);
     } else if (numeroTentativas < 4) {
         const chute = parseInt(document.getElementById("input-chute").value)
         if (chute == numeroSorteado) {
             numeroTentativas = 5;
-            textoTentativas.innerText = `FIM`
-            painel.innerText = `Parabéns você acertou, ${nomeJogador}!!!`
+            infoTentativas(`FIM`);
+            infoPainel(`Parabéns você acertou, ${nomeJogador}!!!`);
         } else if (chute < numeroSorteado) {
             numeroTentativas++;
-            textoTentativas.innerText = `Tentativas feitas: ${numeroTentativas}.`
-            painel.innerText = `Você errou! ${nomeJogador} o número é maior!`
+            infoTentativas(`Tentativas feitas: ${numeroTentativas}.`);
+            infoPainel(`Você errou! ${nomeJogador} o número é maior!`);
         } else if (chute > numeroSorteado) {
             numeroTentativas++;
-            textoTentativas.innerText = `Tentativas feitas: ${numeroTentativas}.`
-            painel.innerText = `Você errou! ${nomeJogador} o número é menor!`
+            infoTentativas(`Tentativas feitas: ${numeroTentativas}.`);
+            infoPainel(`Você errou! ${nomeJogador} o número é menor!`);
         }
     } else if (numeroTentativas = 4) {
         const chute = parseInt(document.getElementById("input-chute").value)
         if (chute == numeroSorteado) {
             numeroTentativas = 5;
-            textoTentativas.innerText = `FIM`
-            painel.innerText = `Parabéns você acertou, ${nomeJogador}!!!`
+            infoTentativas(`FIM`)
+            infoPainel(`Parabéns você acertou, ${nomeJogador}!!!`);
         } else if (chute != numeroSorteado) {
             numeroTentativas++;
-            textoTentativas.innerText = `FIM`
-            painel.innerText = `${nomeJogador} acabou! Você não conseguiu acertar!
-                                O número sorteado foi ${numeroSorteado}.`
+            infoTentativas(`FIM`)
+            infoPainel(`${nomeJogador} acabou! Você não conseguiu acertar!
+                                O número sorteado foi ${numeroSorteado}.`);
         }
     }
 }
 
+function infoTentativas(frase) {
+    textoTentativas.innerText = frase;
+}
+
+function infoPainel(frase) {
+    painel.innerText = frase;
+}
 
 function reinicio() {
     window.location.reload();
@@ -57,16 +64,3 @@ function reinicio() {
 console.log(numeroSorteado);
 tentativa.onclick = compara;
 reiniciar.onclick = reinicio;
-
-// function mostra(frase) {
-//     document.write(frase);
-//     pulaLinha();
-// }
-
-// https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
-// const source = document.getElementById("source");
-// const textContentOutput = document.getElementById("textContentOutput");
-// const innerTextOutput = document.getElementById("innerTextOutput");
-
-// textContentOutput.value = source.textContent;
-// innerTextOutput.value = source.innerText;
