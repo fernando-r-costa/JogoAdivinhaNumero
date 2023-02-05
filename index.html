@@ -5,25 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     
     <title>Jogo Adivinha o Número</title>
 </head>
 <body>
-    <h1>JOGO ADIVINHA O NÚMERO</h1>
-    <h2 id="bemvindo"></h2>
-    <li>O jogador deverá escolher um número entre 0 e 100.</li>
-    <li>Após escolher o número o jogador será informado se acertou ou errou.</li>
-    <li>Se acertou será parabenizado e poderá reiniciar o jogo.</li>
-    <li>Se errou será informado se o número é maior ou menor que o número sorteado.</li>
-    <li>O jogador terá 5 tentativas.</li><br>
+    <header class="titulo">
+        <h1>Jogo adivinha o número</h1>
 
-    <h3>Indique seu chute:</h3>
-    <input type="text" id="input-chute" required placeholder="CHUTE">
-    <input type="submit" id="submit-tentativa" value="OK"><br>
-    <p id="p-numeroTentativas">NENHUMA TENTATIVA</p>
-    <p id="p-painel">VAMOS LÁ!</p>
-    <input type="submit" id="submit-reiniciar" value="RECOMEÇAR">
+    </header>
+
+    <main>
+        <div class="intrucoes">
+            <h2 id="bemvindo"></h2>
+            <li>O jogador deverá escolher um número entre 0 e 100.</li>
+            <li>Após escolher o número o jogador será informado se acertou ou errou.</li>
+            <li>Se acertou será parabenizado e poderá reiniciar o jogo.</li>
+            <li>Se errou será informado se o número é maior ou menor que o número sorteado.</li>
+            <li>O jogador terá 5 tentativas.</li><br>
+        </div>
+        <div class="jogo">
+            <h3>Digite seu chute:</h3>
+            <input type="text" id="input-chute" required placeholder="CHUTE">
+            <input type="submit" id="submit-tentativa" value="OK"><br>
+            <p id="p-painel">Vamos lá!</p>
+            <p id="p-numeroTentativas">Nenhuma tentativa</p>
+            <input type="submit" id="submit-reiniciar" value="RECOMEÇAR">
+        </div>
+    </main>
     
     <script src="main.js"></script>
     

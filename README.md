@@ -20,4 +20,4 @@
 
 ##### Extras:
 - [x] Boas vindas com o nome do jogador.
-- [ ] HTML e CSS mais usuais e bonitos.
+- [x] HTML e CSS mais usuais e bonitos.
